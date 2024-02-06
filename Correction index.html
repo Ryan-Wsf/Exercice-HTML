@@ -3,11 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fonciere-pagerie-malmaison.com/</title>
+    <!-- Le title de ton document doit être indiqué -->
+    <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com%22%3E/">
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/2bb90c57b5.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -26,9 +24,11 @@
     </header>
     <main>
         <section id="section1">
+            <!-- La div intermédiaire est superflue -->
             <div id="divsection1">
                 <article>
                     <h1>bureaux à rueil malmaison</h1>
+                    <!-- Ton h2 est en réalité un p -->
                     <h2>Location de bureaux destination des entreprises</h2>
                     <a class="lien1" href="#">Découvrez nos bureaux à louer</a>
                 </article>
@@ -49,12 +49,14 @@
                     </div>
                     <a class="lien2" href="#">En savoir plus sur rueil malmaison</a>
                 </article>
+                <!-- L'article autour de l'image est superflue, where is your alt= ? c'est un élément important de l'accessibilité -->
                 <article>
-                    <img src="img/34bbe9602501358b4581dc72e8b854c8.jpeg" alt="img">
+                    <img src="img/34bbe9602501358b4581dc72e8b854c8.jpeg" alt="">
                 </article> 
             </div>
             <div id="div2section2">
                 <article>
+                    <!-- Pour les icones, pourquoi ne pas avoir utiliser fontawesome ? -->
                     <img src="img/Symbol.png" alt="img">
                     <p>32 Bureaux loués</p>
                 </article>
@@ -118,15 +120,17 @@
             </section>
             <section id="section5">
                 <div>
-                    <h2>Nous contacter</h2>
-                    <h3>POUR UNE QUESTION OU UNE VISITE</h3>
-                    <form action="#"></form>
+                    <!-- Les titres ne peuvent pas faire parti du formulaire -->
+                    <form action="#">
+                            <h2>Nous contacter</h2>
+                            <h3>POUR UNE QUESTION OU UNE VISITE</h3>
                         <div id="divsection5">
+                            <!-- Utilise le bon type pour les input -->
                             <input class="input1" type="text" placeholder="Votre nom">
                             <input class="input1" type="text" placeholder="Votre prénom">
                             <input class="input2" type="text" placeholder="Votre entreprise">
-                            <input class="input1" type="email" id="email" name="email" placeholder="Votre email">
-                            <input class="input1" type="tel" id="telephone" name="telephone" pattern="[0-9]{10}" placeholder="Votre téléphone">
+                            <input class="input1" type="text" placeholder="Votre email">
+                            <input class="input1" type="text" placeholder="Votre téléphone">
                             <textarea name="textarea" class="input2" placeholder="Message" cols="30" rows="10"></textarea>
                         </div>
                         <div>
